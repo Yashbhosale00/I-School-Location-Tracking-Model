@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "128861611536",
+    "project_id": "locationdetection-3a06e",
+    "storage_bucket": "locationdetection-3a06e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:128861611536:android:36f0c978ab771df7fbcc95",
+        "android_client_info": {
+          "package_name": "com.example.locationdetect"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQxcLDhyjpDsi5U9oSVRZOXOGwgAWrquk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

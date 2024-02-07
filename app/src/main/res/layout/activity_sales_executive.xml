@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/xyz"
+    tools:context=".SalesExecutive_Activity">
+
+    <!-- App bar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="Sales Executive Dashboard"
+        app:titleTextColor="@android:color/white"
+        app:subtitle="Enable Location Service"
+        app:subtitleTextColor="@android:color/white"
+        app:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <!-- You can add any additional elements here if needed -->
+
+    </LinearLayout>
+
+    <!-- CardView containing My Location TextView -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardBackgroundColor="#66D6E7E6"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/roboto_slab"
+            android:text="Sales Executive Location"
+            android:textColor="@android:color/white"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:padding="16dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Switch -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardBackgroundColor="#66D6E7E6"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="8dp">
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Share Location"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"/>
+    </androidx.cardview.widget.CardView>
+
+    <!-- MaterialButton -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/SalesLogout"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Logout"
+        android:padding="10dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="20sp"
+        app:cornerRadius="15dp"
+        app:strokeColor="@android:color/holo_red_dark"
+        app:strokeWidth="2dp" />
+
+</LinearLayout>
